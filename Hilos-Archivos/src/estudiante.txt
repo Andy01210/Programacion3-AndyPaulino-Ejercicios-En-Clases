@@ -1,0 +1,17 @@
+Nombre del estudiante: Andy
+Matricula del estudiante: 10006051
+Edad del estudiante: 18
+Nombre del estudiante: Andy Delcio
+Matricula del estudiante: 10006052
+Edad del estudiante: 20
+Nombre del estudiante: Saul Fabre
+Matricula del estudiante: 10005050
+Edad del estudiante: 21
+Nombre del estudiante: Andy 2
+Matricula del estudiante: 15151515
+Edad del estudiante: 18
+
+Nombre del estudiante: Andy 3
+Matricula del estudiante: 16161616
+Edad del estudiante: 15
+
