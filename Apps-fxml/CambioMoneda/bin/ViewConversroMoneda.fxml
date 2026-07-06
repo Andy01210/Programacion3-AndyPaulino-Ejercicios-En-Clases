@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5F5DC;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller ="Controller">
+   <children>
+      <VBox alignment="CENTER" layoutX="250.0" layoutY="89.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="Conversor de Monedas" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label text="Monto en pesos dominicanos" />
+            <TextField fx:id="txtMonto" maxWidth="300.0" prefWidth="300.0" promptText="Ejemplo:5900" />
+            <Label text="Elija el tipo de moneda al que quiera hacer el cambio" />
+            <ComboBox fx:id="cbMoneda" prefWidth="150.0" promptText="Tipo de Moneda " onKeyPressed="#EnterConvertir" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btnConvertir" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Convertir" onAction="#BontonConvertir" onMouseEntered="#MouseActionEntrar" onMouseExited="#MouseActionSalir">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnLimpiar" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Limpiar" onAction = "#BotonLimpiar">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="lblResultado" text="Resultado" />
+            <Label fx:id="lblMensaje" text="Mejoras" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
