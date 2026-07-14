@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: SkyBlue;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerPgRegistro">
+   <children>
+      <VBox alignment="CENTER" layoutX="276.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label style="-fx-background-color: SkyBlue;" text="Registre una Cita">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="14.0" prefWidth="579.0" spacing="30.0">
+               <children>
+                  <Label text="Codigo  " />
+                  <TextField fx:id="TxtCodigo" promptText="Ej: 2525-p" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="16.0" prefWidth="579.0" spacing="30.0">
+               <children>
+                  <Label text="Nombre " />
+                  <TextField fx:id="TxtNombre" promptText="Ej; Andy PAulino" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="14.0" prefWidth="579.0" spacing="30.0">
+               <children>
+                  <Label text="Cedula   " />
+                  <TextField fx:id="TxtCedula" promptText="Ej :402-4416229-7" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="18.0" prefWidth="579.0" spacing="30.0">
+               <children>
+                  <Label text="Telefono" />
+                  <TextField fx:id="TxtTelefono" promptText="Ej: 849-753-2101" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="18.0" prefWidth="579.0" spacing="30.0">
+               <children>
+                  <Label text="Hora      " />
+                  <TextField fx:id="TxtHora" promptText="Ej: 8:00 Am" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="579.0" spacing="30.0">
+               <children>
+                  <ComboBox fx:id="CbMedico" prefWidth="150.0" promptText="Medico" />
+                  <ComboBox fx:id="CbEspecialidad" prefWidth="150.0" promptText="Especialidad" />
+                  <ComboBox fx:id="CbEstado" prefWidth="150.0" promptText="Estado" />
+               </children>
+            </HBox>
+            <DatePicker fx:id="DPFecha" />
+            <TextArea fx:id="TxtAMotivo" maxWidth="300.0" prefHeight="29.0" prefWidth="300.0" promptText="Ej: Dolor severo de Cabeza" />
+            <Label fx:id="LblMensaje" text="Bienvenido al Sistema de Registro de Citas" />
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="579.0" spacing="30.0">
+               <children>
+                  <Button fx:id="BtnGuardar" minHeight="30.0" mnemonicParsing="false" onAction="#AccionGuardar" prefWidth="100.0" text="Guardar" />
+                  <Button fx:id="BtnLimpiar" mnemonicParsing="false" prefHeight="30.0" onAction = "#AccionLimpiar" prefWidth="100.0" text="Limpiar" />
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
